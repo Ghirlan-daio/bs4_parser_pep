@@ -1,5 +1,7 @@
 # Парсер мира Python
 
+### Автор: Dmitry Stepanov [Ghirlan-daio](https://github.com/Ghirlan-daio)
+
 Парсер поможет вам быть в курсе новосте в мире Python.
 
 Парсер работает в четырёх режимах и выполняет четыре функции:

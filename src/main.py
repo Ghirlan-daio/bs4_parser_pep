@@ -137,10 +137,9 @@ def pep(session):
     total = 0
     counter = Counter(results)
     resulting_table = [("Status", "Quantity")]
-
+    expected_statuses = [value for sublist in list(
+        EXPECTED_STATUS.values()) for value in sublist]
     for status, count in counter.items():
-        expected_statuses = [value for sublist in list(
-            EXPECTED_STATUS.values()) for value in sublist]
         if status not in expected_statuses:
             logging.info(
                 f"Статус не совпал:\n"
